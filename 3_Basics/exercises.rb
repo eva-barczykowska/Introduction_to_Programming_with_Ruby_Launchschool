@@ -93,3 +93,37 @@ puts dates[1]
 puts dates[2]
 puts dates[3]
 puts dates[4]
+
+# 5. write a program that outputs the factorial of numbers 5, 6, 7 and 8
+puts "5:"
+
+def factorial(n)
+  n == 0? 1 : n  * factorial(n-1)
+end
+
+puts
+
+puts factorial(5)
+puts factorial(6)
+puts factorial(7)
+puts factorial(8)
+
+puts
+
+# their solution
+puts 5 * 4 * 3 * 2 * 1
+puts 6 * 5 * 4 * 3 * 2 * 1
+puts 7 * 6 * 5 * 4 * 3 * 2 * 1
+puts 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
+
+puts
+puts
+
+# 6. Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen
+puts "6:"
+
+puts 3.3 * 3.3
+puts 4.4 * 4.4
+puts 5.5 * 5.5
+
+# alternative is 3.3**2
