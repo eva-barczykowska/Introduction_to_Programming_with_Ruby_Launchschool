@@ -30,4 +30,8 @@ words.each do |word|
   end
 end
 
-p result
+#p result
+
+result.each do |key, value|
+  p value
+end
