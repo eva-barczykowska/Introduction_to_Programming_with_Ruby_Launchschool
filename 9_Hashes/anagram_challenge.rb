@@ -9,15 +9,10 @@ words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
 # ["neon", "none"]
 
 # their solution
-
-# organize these anagrams into a hash
-# the key of the hash is going to be alphabetically sorted so the first one will be demo, the second enno
-# value associated with this key will be an array of all the anagrams of that word
-# so if demo is a key, the value associated with that key is an array of words ["demo", "dome", "mode"]
-# iterate over the array
-# sort each word into alphabetical order
-# if key exists, append current word into value(array)
-# otherwise create a new key with a sorted word
+# iterate over array
+# sort each word into alphabetical orderm, e.g none will be enno, this sorted word will be the key in the hash
+# if key exists, append current word into value, which is an array
+# otherwise, create a new key with this sorted word
 
 result = {}
 
@@ -30,7 +25,7 @@ words.each do |word|
   end
 end
 
-#p result
+p result
 
 result.each do |key, value|
   p value
