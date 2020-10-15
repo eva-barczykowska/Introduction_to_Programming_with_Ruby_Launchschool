@@ -25,7 +25,7 @@ words.each do |word|
   end
 end
 
-# p result
+p result
 
 result.each_value do |v|
   p v
